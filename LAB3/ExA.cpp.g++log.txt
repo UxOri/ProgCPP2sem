@@ -1,0 +1,11 @@
+C:\Prog\Edu\1.2semCPP\LAB3\ExA.cpp: In function 'float mean(const int*, int)':
+C:\Prog\Edu\1.2semCPP\LAB3\ExA.cpp:28:26: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]
+     float M = float(S) / size;
+                          ^
+C:\Prog\Edu\1.2semCPP\LAB3\ExA.cpp: In function 'int main()':
+C:\Prog\Edu\1.2semCPP\LAB3\ExA.cpp:23:1: warning: stack usage might be unbounded [-Wstack-usage=]
+ }
+ ^
+ 
+"iconv.exe" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
