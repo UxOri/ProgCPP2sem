@@ -1,0 +1,10 @@
+C:\Prog\Edu\ProgCPP2sem\LAB3\ExC.cpp: In function 'void print_array(int*)':
+C:\Prog\Edu\ProgCPP2sem\LAB3\ExC.cpp:1:6: warning: no previous declaration for 'void print_array(int*)' [-Wmissing-declarations]
+ void print_array (int* p) {
+      ^
+C:\Prog\Edu\ProgCPP2sem\LAB3\ExC.cpp:2:33: error: 'cout' was not declared in this scope
+     for (int i = 0; i < 6; i++) cout << p[i] << " ";
+                                 ^
+------------------------------------------------------------------------------------------
+'iconv.exe' is not recognized as an internal or external command,
+operable program or batch file.
