@@ -1,0 +1,10 @@
+C:\Prog\Edu\ProgCPP2sem\LAB3\ExFo.cpp: In function 'int* my_slightly_dumb_reallocation(int*, unsigned int, unsigned int)':
+C:\Prog\Edu\ProgCPP2sem\LAB3\ExFo.cpp:30:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (signed int i = 0; i < n_old and i < n_new; i++) {
+                                ^
+C:\Prog\Edu\ProgCPP2sem\LAB3\ExFo.cpp:30:46: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (signed int i = 0; i < n_old and i < n_new; i++) {
+                                              ^
+ 
+"iconv.exe" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.

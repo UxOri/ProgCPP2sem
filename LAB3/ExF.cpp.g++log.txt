@@ -1,0 +1,15 @@
+C:\Prog\Edu\ProgCPP2sem\LAB3\ExF.cpp: In function 'int* my_slightly_dumb_reallocation(int*, unsigned int, unsigned int)':
+C:\Prog\Edu\ProgCPP2sem\LAB3\ExF.cpp:1:6: warning: no previous declaration for 'int* my_slightly_dumb_reallocation(int*, unsigned int, unsigned int)' [-Wmissing-declarations]
+ int* my_slightly_dumb_reallocation(int* source, unsigned int n_old, unsigned int n_new) {
+      ^
+C:\Prog\Edu\ProgCPP2sem\LAB3\ExF.cpp:4:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < n_old and i < n_new; i++) {
+                         ^
+C:\Prog\Edu\ProgCPP2sem\LAB3\ExF.cpp:4:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < n_old and i < n_new; i++) {
+                                       ^
+c:/prog/codeblocks/mingw/bin/../lib/gcc/i686-pc-mingw32/4.8.1/../../../libmingw32.a(main.o):main.c:(.text.startup+0xa7): undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+ 
+"iconv.exe" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.

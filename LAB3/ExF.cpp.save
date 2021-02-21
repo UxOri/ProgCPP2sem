@@ -1,0 +1,5 @@
+int* my_slightly_dumb_reallocation(int* source, unsigned int n_old, unsigned int n_new) {
+    if (n_new == 0) return NULL;
+    int* data = new int[n_new];
+    
+}

@@ -1,0 +1,5 @@
+int* now_get_me_some_bytes (int size) {
+    int* data = new int[size];
+    return data;
+}
+

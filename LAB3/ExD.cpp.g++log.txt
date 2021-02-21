@@ -1,0 +1,13 @@
+C:\Prog\Edu\ProgCPP2sem\LAB3\ExD.cpp: In function 'int* now_get_me_some_bytes(unsigned int)':
+C:\Prog\Edu\ProgCPP2sem\LAB3\ExD.cpp:2:6: warning: no previous declaration for 'int* now_get_me_some_bytes(unsigned int)' [-Wmissing-declarations]
+ int* now_get_me_some_bytes (unsigned int size) {
+      ^
+C:\Prog\Edu\ProgCPP2sem\LAB3\ExD.cpp: In function 'void now_free_some_bytes(int*)':
+C:\Prog\Edu\ProgCPP2sem\LAB3\ExD.cpp:7:6: warning: no previous declaration for 'void now_free_some_bytes(int*)' [-Wmissing-declarations]
+ void now_free_some_bytes (int* data) {
+      ^
+c:/prog/codeblocks/mingw/bin/../lib/gcc/i686-pc-mingw32/4.8.1/../../../libmingw32.a(main.o):main.c:(.text.startup+0xa7): undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+ 
+"iconv.exe" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
