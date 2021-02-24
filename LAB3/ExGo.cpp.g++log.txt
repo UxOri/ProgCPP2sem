@@ -1,0 +1,7 @@
+C:\Prog\Edu\ProgCPP2sem\LAB3\ExGo.cpp: In function 'int main()':
+C:\Prog\Edu\ProgCPP2sem\LAB3\ExGo.cpp:19:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < n; i++) {
+                         ^
+ 
+"iconv.exe" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.

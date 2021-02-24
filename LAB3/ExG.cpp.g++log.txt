@@ -1,0 +1,18 @@
+C:\Prog\Edu\ProgCPP2sem\LAB3\ExG.cpp:1:38: error: 'Cat' was not declared in this scope
+ unsigned int count_total_mice_amount(Cat* cats, unsigned int n) {
+                                      ^
+C:\Prog\Edu\ProgCPP2sem\LAB3\ExG.cpp:1:43: error: 'cats' was not declared in this scope
+ unsigned int count_total_mice_amount(Cat* cats, unsigned int n) {
+                                           ^
+C:\Prog\Edu\ProgCPP2sem\LAB3\ExG.cpp:1:49: error: expected primary-expression before 'unsigned'
+ unsigned int count_total_mice_amount(Cat* cats, unsigned int n) {
+                                                 ^
+C:\Prog\Edu\ProgCPP2sem\LAB3\ExG.cpp:1:63: error: expression list treated as compound expression in initializer [-fpermissive]
+ unsigned int count_total_mice_amount(Cat* cats, unsigned int n) {
+                                                               ^
+C:\Prog\Edu\ProgCPP2sem\LAB3\ExG.cpp:1:65: error: expected ',' or ';' before '{' token
+ unsigned int count_total_mice_amount(Cat* cats, unsigned int n) {
+                                                                 ^
+ 
+"iconv.exe" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.

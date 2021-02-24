@@ -21,6 +21,7 @@ int main() {
     a = my_slightly_dumb_reallocation(a, n, n / 2);
     a = my_slightly_dumb_reallocation(a, n / 2, 0);
     a = my_slightly_dumb_reallocation(a, 0, 0);
+
     return 0;
 }
 
@@ -30,6 +31,6 @@ int* my_slightly_dumb_reallocation(int* source, unsigned int n_old, unsigned int
     for (signed int i = 0; i < n_old and i < n_new; i++) {
         data[i] = source[i];
     }
-    delete []source;
+    if (source != nullptr) delete []source;
     return data;
 }

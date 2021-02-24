@@ -1,0 +1,16 @@
+C:\Prog\Edu\ProgCPP2sem\LAB3\ExH.cpp:1:1: error: 'Cat' does not name a type
+ Cat* get_home_for_a_cats_pride(unsigned int n) {
+ ^
+C:\Prog\Edu\ProgCPP2sem\LAB3\ExH.cpp:14:33: error: variable or field 'clear_home_of_a_cats_pride' declared void
+ void clear_home_of_a_cats_pride(Cat *cats, unsigned int n) {
+                                 ^
+C:\Prog\Edu\ProgCPP2sem\LAB3\ExH.cpp:14:33: error: 'Cat' was not declared in this scope
+C:\Prog\Edu\ProgCPP2sem\LAB3\ExH.cpp:14:38: error: 'cats' was not declared in this scope
+ void clear_home_of_a_cats_pride(Cat *cats, unsigned int n) {
+                                      ^
+C:\Prog\Edu\ProgCPP2sem\LAB3\ExH.cpp:14:44: error: expected primary-expression before 'unsigned'
+ void clear_home_of_a_cats_pride(Cat *cats, unsigned int n) {
+                                            ^
+ 
+"iconv.exe" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
