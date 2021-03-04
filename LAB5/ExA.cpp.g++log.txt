@@ -1,0 +1,10 @@
+C:\Prog\Edu\ProgCPP2sem\LAB5\ExA.cpp: In function 'int main()':
+C:\Prog\Edu\ProgCPP2sem\LAB5\ExA.cpp:37:61: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 if ((input[i] == ' ') or (i == input.length())) {
+                                                             ^
+C:\Prog\Edu\ProgCPP2sem\LAB5\ExA.cpp:78:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < nums.size(); i++) {
+                                   ^
+------------------------------------------------------------------------------------------
+'iconv.exe' is not recognized as an internal or external command,
+operable program or batch file.

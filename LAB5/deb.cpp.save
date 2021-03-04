@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cmath>
+#include <stack>
+#include <string>
+using std::cin;
+using std::cout;
+using std::endl;
+using std::string;
+using std::stack;
+
+int main()
+{
+    std::cout << __cplusplus;
+}
+
+int stoi (std::string S) {
+    int size = S.length();
+    int f = 0;
+    int output = 0;
+    for (; S[f] != ' ' and f < size; f++);
+    f-=1;
+    for (int i = 0; S[i] != ' ' and i < size; i++) {
+        output += int((S[i] - '0')*pow(10, f));
+    }
+    return output;
+}
