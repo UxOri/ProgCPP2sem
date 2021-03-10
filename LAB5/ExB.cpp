@@ -10,21 +10,30 @@ using std::stack;
 
 int main () {
     stack<int> a;
-    int f;
-    while (true) {
+    int f = 1;
+    while (f != 0) {
         cin >> f;
-        if (f == 0)
-            break;
         if (f > 0)
             a.push(f);
         else if (a.empty())
             continue;
         else if (fabs(f) < a.top()) {
-            t = a.top();
+            int t = a.top();
             t += f;
             a.pop();
             a.push(t);
         }
         else if (fabs(f) >= a.top())
+            a.pop();
+    }
+    if (a.empty())
+        cout << 0 << " " << -1;
+    else {
+        int Top = a.top();
+        int i = 0;
+        for (; !(a.empty()); i++)
+            a.pop();
+
+        cout << i << " " << Top;
     }
 }

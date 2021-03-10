@@ -1,0 +1,25 @@
+C:\Prog\Edu\ProgCPP2sem\LAB5\ExC.cpp: In function 'std::queue<int> insertion(std::queue<int>, int)':
+C:\Prog\Edu\ProgCPP2sem\LAB5\ExC.cpp:36:10: error: expected primary-expression before ')' token
+     for ()
+          ^
+C:\Prog\Edu\ProgCPP2sem\LAB5\ExC.cpp:36:10: error: expected ';' before ')' token
+C:\Prog\Edu\ProgCPP2sem\LAB5\ExC.cpp:37:1: error: expected primary-expression before '}' token
+ }
+ ^
+C:\Prog\Edu\ProgCPP2sem\LAB5\ExC.cpp:37:1: error: expected ';' before '}' token
+C:\Prog\Edu\ProgCPP2sem\LAB5\ExC.cpp:37:1: error: expected primary-expression before '}' token
+C:\Prog\Edu\ProgCPP2sem\LAB5\ExC.cpp:37:1: error: expected ')' before '}' token
+C:\Prog\Edu\ProgCPP2sem\LAB5\ExC.cpp:37:1: error: expected primary-expression before '}' token
+C:\Prog\Edu\ProgCPP2sem\LAB5\ExC.cpp:37:1: error: expected ';' before '}' token
+C:\Prog\Edu\ProgCPP2sem\LAB5\ExC.cpp:34:9: warning: unused variable 'place' [-Wunused-variable]
+     int place = size/2 + 1;
+         ^
+C:\Prog\Edu\ProgCPP2sem\LAB5\ExC.cpp:35:10: warning: unused variable 'data' [-Wunused-variable]
+     int* data = new int[size + 1];
+          ^
+C:\Prog\Edu\ProgCPP2sem\LAB5\ExC.cpp:37:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+ 
+"iconv.exe" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
