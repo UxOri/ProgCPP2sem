@@ -1,0 +1,38 @@
+#include <iostream>
+#include <cmath>
+//#include <stack>
+#include <vector>
+#include <iomanip>
+using std::cin;
+using std::cout;
+using std::endl;
+using std::vector;
+//using std::stack;
+
+int main () {
+    int N;
+    cin >> N;
+    vector< vector<double> > A (N, vector<double>(N, 0));
+    vector< vector<double> > B (N, vector<double>(N, 0));
+
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < N; j++) {
+            cin >> A[i][j];
+        }
+    }
+
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < N; j++) {
+            cin >> B[i][j];
+        }
+    }
+    
+    vector< vector<double> > C (N, vector<double>(N, 0));
+    
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < N; j++) {
+            for (int r = 0; r < )
+        }
+    }
+}
+

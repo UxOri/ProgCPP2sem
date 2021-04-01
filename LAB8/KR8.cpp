@@ -1,0 +1,3 @@
+StrangeMatrix transpose(StrangeMatrix m) {
+
+}

@@ -1,0 +1,31 @@
+#include <iostream>
+#include <cmath>
+//#include <stack>
+//#include <string>
+#include <iomanip>
+using std::cin;
+using std::cout;
+using std::endl;
+//using std::string;
+//using std::stack;
+
+int main () {
+    double x1, y1, z1, x2, y2, z2, x3, y3, z3, x0, y0, z0;
+    cin >> x0 >> y0 >> z0;
+    cin >> x1 >> y1 >> z1;
+    cin >> x2 >> y2 >> z2;
+    cin >> x3 >> y3 >> z3;
+
+    x1 -= x0;
+    y1 -= y0;
+    z1 -= z0;
+    x2 -= x0;
+    y2 -= y0;
+    z2 -= z0;
+    x3 -= x0;
+    y3 -= y0;
+    z3 -= z0;
+
+    cout << std::fixed << std::setprecision(4);
+    cout << (1.0/6)*fabs((x1*y2*z3 + y1*z2*x3 + x2*z1*y3)-(x3*y2*z1 + x1*z2*y3 + x2*y1*z3));
+}
