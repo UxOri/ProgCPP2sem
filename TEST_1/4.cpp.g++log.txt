@@ -1,3 +1,7 @@
+C:\Prog\Edu\ProgCPP2sem\TEST_1\4.cpp: In function 'bool comparator(int2, int2)':
+C:\Prog\Edu\ProgCPP2sem\TEST_1\4.cpp:14:6: warning: no previous declaration for 'bool comparator(int2, int2)' [-Wmissing-declarations]
+ bool comparator (int2 a, int2 b) {
+      ^
 ------------------------------------------------------------------------------------------
 'iconv.exe' is not recognized as an internal or external command,
 operable program or batch file.

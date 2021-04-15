@@ -6,24 +6,35 @@ using std::cin;
 using std::cout;
 using std::endl;
 
+struct int2 {
+    int num = 0;
+    int i = 0;
+};
+
+bool comparator (int2 a, int2 b) {
+    return a.num < b.num;
+}
+
 int main () {
     int N;
     cin >> N;
 
-    int* data = new int[N];
-    for (int i = 0; i < N; i++)
-        cin >> data[i];
-    std::sort (data, data + N);
+    int2* data = new int2[N];
+    for (int i = 0; i < N; i++) {
+        cin >> data[i].num;
+        data[i].i = i;
+    }
+    std::sort (data, data + N, comparator);
     /*for (int i = 0; i < N; i++)
         cout << data[i];  */
-    double S = fabs(data[0] - data[1]);
-    int a = 0;
-    int b = 1;
+    double S = fabs(data[0].num - data[1].num);
+    int a = data[0].i;
+    int b = data[1].i;
     for (int i = 0; i < N - 1; i++) {
-        if (fabs(data[i] - data[i+1]) < S) {
-            a = i;
-            b = i + 1;
-            S = fabs(data[i] - data[i+1]);
+        if (fabs(data[i].num - data[i+1].num) < S) {
+            a = data[i].i;
+            b = data[i + 1].i;
+            S = fabs(data[i].num - data[i+1].num);
         }
     }
 
