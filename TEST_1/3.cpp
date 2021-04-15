@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <iomanip>
 using std::cin;
 using std::cout;
 using std::endl;
@@ -15,6 +16,9 @@ int main () {
     int* data = new int[N];
     for (int i = 0; i < N; i++)
         cin >> data[i];
+    merge_sort (data, N);
+
+    cout << data[N/2];
 
     return 0;
 }
@@ -45,7 +49,17 @@ void merge (int* data1, int* data2, const int size1, const int size2) {
     }
     else if (j == size2) {
         for (; i < size1; i++)
-            data[i+j] = data2[j];
+            data[i+j] = data1[i];
+    }
+    i = 0;
+    j = 0;
+    for (; i < size1; i++) {
+        data1[i] = data[i];
+    }
+    j = i;
+    i = 0;
+    for (; i < size2; i++) {
+        data2[i] = data[j+i];
     }
 
 }
@@ -60,5 +74,5 @@ void merge_sort (int* data, const int size) {
         merge_sort(data + size/2, size - size/2);
     }
 
-    merge (data, data + size/2 + 1, size/2, size - size/2);
+    merge (data, data + size/2, size/2, size - size/2);
 }
