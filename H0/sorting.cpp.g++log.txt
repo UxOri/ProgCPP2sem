@@ -1,5 +1,5 @@
 C:\Prog\Edu\ProgCPP2sem\H0\sorting.cpp: In function 'int find_min(int*, int)':
-C:\Prog\Edu\ProgCPP2sem\H0\sorting.cpp:44:5: warning: no previous declaration for 'int find_min(int*, int)' [-Wmissing-declarations]
+C:\Prog\Edu\ProgCPP2sem\H0\sorting.cpp:45:5: warning: no previous declaration for 'int find_min(int*, int)' [-Wmissing-declarations]
  int find_min (int* data, const int size) {
      ^
  

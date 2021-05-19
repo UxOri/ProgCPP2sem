@@ -12,14 +12,16 @@ int find_pos (int* data, const int size, int value);
 void merge (int* data1, int* data2, const int size1, const int size2);
 void merge_sort (int* data, const int size);
 void selection_sort (int* data, const int size);
+void insertion_sort (int* data, const int size);
+void bubble_sort (int* data, const int size);
 
 int main () {
-    int data[10] = {1, 2, 7, 3, 0, 10, 9, 8, 5, 4};
+    int data[15] = {1, 2, 7, 3, 0, 10, 9, 8, 5, 4, 123, -123, 2, 1, 1};
     swap(data, 1, 0);
-    selection_sort(data, 10);
+    bubble_sort(data, 15);
     //rOR(data, 10);
     //rOR(data, 10);
-    for (int i = 0; i < 10; i++) cout << data[i] << endl;
+    for (int i = 0; i < 15; i++) cout << data[i] << endl;
     //cout << "----------------" << endl;
     //cout << find_pos(data, 10, -1);
 
@@ -40,7 +42,7 @@ void rOR (int* data, const int size) {
     data[0] = f;
 }
 
-int findmin (int* data, const int size) {
+int find_min (int* data, const int size) {
     int n = data[0];
     int pos = 0;
     for (int i = 0; i < size; i++) {
@@ -131,18 +133,47 @@ void merge_sort (int* data, const int size) {
 
 void selection_sort (int* data, const int size) {
     for (int i = 0; i < size; i++) {
-        swap(data, i, findmin(data + i, size - i) + i);
+        swap(data, i, find_min(data + i, size - i) + i);
     }
 }
 
 void insertion_sort (int* data, const int size) {
     swap(data, find_min(data, size), 0);
     for (int i = 1; i < size; i++) {
-        p = find_pos(data, i, data[i]);
-        swap(data, i, size-1);
-        rOR(data+p, size - p + 1)
+        int p = find_pos(data, i, data[i]);
+        if (p == i) {
+            continue;
+        }
+        swap(data, i, size - 1);
+        rOR(data + p, size - p);
     }
 }
 
+void bubble_sort (int* data, const int size) {
+    int p = 1;
+    while(p != 0) {
+        p = 0;
+        for (int i = 1; i < size; i++) {
+            if (data[i] < data[i - 1]) {
+                swap(data, i, i - 1);
+                p = 1;
+            }
 
+        }
+        for (int i = size - 1; i > 0; i--) {
+            if (data[i] < data[i - 1]) {
+                swap(data, i, i - 1);
+                p = 1;
+            }
+        }
+    }
+}
 
+void quick_sort (int* data, const int size) {
+    int p = data[size/2];
+    int l = 0;
+    int r = size - 1;
+    while (l != r) {
+        
+    }
+}

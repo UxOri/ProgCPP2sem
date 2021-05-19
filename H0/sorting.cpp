@@ -13,11 +13,12 @@ void merge (int* data1, int* data2, const int size1, const int size2);
 void merge_sort (int* data, const int size);
 void selection_sort (int* data, const int size);
 void insertion_sort (int* data, const int size);
+void bubble_sort (int* data, const int size);
 
 int main () {
     int data[15] = {1, 2, 7, 3, 0, 10, 9, 8, 5, 4, 123, -123, 2, 1, 1};
     swap(data, 1, 0);
-    insertion_sort(data, 15);
+    bubble_sort(data, 15);
     //rOR(data, 10);
     //rOR(data, 10);
     for (int i = 0; i < 15; i++) cout << data[i] << endl;
@@ -139,22 +140,31 @@ void selection_sort (int* data, const int size) {
 void insertion_sort (int* data, const int size) {
     swap(data, find_min(data, size), 0);
     for (int i = 1; i < size; i++) {
-        //cout << "nya! for i = " << i << endl;
-        //for (int i = 0; i < 10; i++) cout << data[i] << " ";
-        //cout << endl;
         int p = find_pos(data, i, data[i]);
         if (p == i) {
-            //cout << "nya! continue" << endl;
             continue;
         }
-        //cout << "nya! pos" << endl;
         swap(data, i, size - 1);
-        //cout << "nya! swap" << endl;
         rOR(data + p, size - p);
-        //cout << "nya! rOR" << endl;
-        //cout << "-------------------------------" << endl;
     }
 }
 
+void bubble_sort (int* data, const int size) {
+    int p = 1;
+    while(p != 0) {
+        p = 0;
+        for (int i = 1; i < size; i++) {
+            if (data[i] < data[i - 1]) {
+                swap(data, i, i - 1);
+                p = 1;
+            }
 
-
+        }
+        for (int i = size - 1; i > 0; i--) {
+            if (data[i] < data[i - 1]) {
+                swap(data, i, i - 1);
+                p = 1;
+            }
+        }
+    }
+}
