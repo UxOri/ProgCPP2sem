@@ -21,10 +21,19 @@ public:
 
     void append (num value) {
         if (nodes.empty) {
-            nodes.push_back()
+            Node<num> node(nullptr, nullptr, nullptr, value);
+            nodes.push_back(node);
+        }
+        Node<num> temp = no
+        else {
+            while ((temp.l != nullptr && temp.l != nullptr) or temp.t == nullptr) {
+                temp
+            }
+        }
     }
 };
 
 int main () {
 
+    return 0;
 }

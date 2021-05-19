@@ -24,7 +24,18 @@ public:
             Node<num> node(nullptr, nullptr, nullptr, value);
             nodes.push_back(node);
         }
+        Node<num>* temp = &nodes[0];
+        else {
+            while ((temp.l != nullptr && temp.l != nullptr) or temp.t == nullptr) {
+                if (value >= *(temp).v) {
+                    temp = *(temp).r;
+                }
+                else if (value < *(temp).v) {
+                    temp = *(temp).l;
+                }
+            }
 
+        }
     }
 };
 

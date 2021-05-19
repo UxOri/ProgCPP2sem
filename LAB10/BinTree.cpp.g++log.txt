@@ -1,3 +1,7 @@
-------------------------------------------------------------------------------------------
-'iconv.exe' is not recognized as an internal or external command,
-operable program or batch file.
+C:\Prog\Edu\ProgCPP2sem\LAB10\BinTree.cpp: In member function 'void Tree<num>::append(num)':
+C:\Prog\Edu\ProgCPP2sem\LAB10\BinTree.cpp:28:9: error: 'else' without a previous 'if'
+         else {
+         ^
+ 
+"iconv.exe" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
