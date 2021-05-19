@@ -1,0 +1,7 @@
+C:\Prog\Edu\ProgCPP2sem\LAB9\EX1A.cpp: In function 'std::stack<int> get_sc(std::string)':
+C:\Prog\Edu\ProgCPP2sem\LAB9\EX1A.cpp:35:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < input.length(); i++) {
+                                      ^
+------------------------------------------------------------------------------------------
+'iconv.exe' is not recognized as an internal or external command,
+operable program or batch file.

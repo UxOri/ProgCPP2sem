@@ -1,0 +1,52 @@
+#include <iostream>
+#include <cmath>
+#include <vector>
+#include <string>
+using std::cin;
+using std::cout;
+using std::endl;
+using std::string;
+using std::vector;
+
+struct Omega {
+    char sym;
+    int num;
+};
+
+bool operator < (const Omega &omega1, const Omega &omega2)
+    return omega1.num < omega2.num
+
+
+bool operator == (const Omega &omega1, const Omega &omega2)
+    return (omega1.num == omega2.num)
+
+int main () {
+    vector<Omega> data;
+    string text;
+    std::getline(cin, text);
+    int text_size = text.length();
+
+    for (int i = 0; i < text_size; i++) {
+        bool flag = 0;
+        int j0 = 0;
+        for (int j = 0; j < data.size(); j++) {
+            if (data[j].sym == text[i])
+                flag = 1;
+                j0 = j;
+                break;
+        }
+        if (flag == 0) {
+            Omega p = {text[i], 1};
+            data.push_back(p);
+        }
+        else {
+            data[j0].num += 1;
+        }
+    }
+    int size = data.size();
+    
+    
+    for (int i = 0; i < size; i++) {
+        cout << "\"" << data[i].sym << "\"::" << data[i].num << endl;
+    }
+}

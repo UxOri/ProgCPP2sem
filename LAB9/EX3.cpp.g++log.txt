@@ -1,0 +1,18 @@
+C:\Prog\Edu\ProgCPP2sem\LAB9\EX3.cpp: In function 'bool operator<(const Omega&, const Omega&)':
+C:\Prog\Edu\ProgCPP2sem\LAB9\EX3.cpp:17:6: warning: no previous declaration for 'bool operator<(const Omega&, const Omega&)' [-Wmissing-declarations]
+ bool operator < (const Omega &omega1, const Omega &omega2) {
+      ^
+C:\Prog\Edu\ProgCPP2sem\LAB9\EX3.cpp: In function 'bool operator==(const Omega&, const Omega&)':
+C:\Prog\Edu\ProgCPP2sem\LAB9\EX3.cpp:21:6: warning: no previous declaration for 'bool operator==(const Omega&, const Omega&)' [-Wmissing-declarations]
+ bool operator == (const Omega &omega1, const Omega &omega2) {
+      ^
+C:\Prog\Edu\ProgCPP2sem\LAB9\EX3.cpp: In function 'int main()':
+C:\Prog\Edu\ProgCPP2sem\LAB9\EX3.cpp:37:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int j = 0; j < data.size(); j++) {
+                                           ^
+C:\Prog\Edu\ProgCPP2sem\LAB9\EX3.cpp:56:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < data.size(); i++) {
+                                   ^
+------------------------------------------------------------------------------------------
+'iconv.exe' is not recognized as an internal or external command,
+operable program or batch file.
